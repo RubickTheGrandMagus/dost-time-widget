@@ -1,0 +1,13 @@
+/*DOST clock Adjustment*/
+#pst-time-mod{height:95px}
+.pst-grid{
+	display:grid;
+	grid-template-columns:40px auto 40px;
+}
+.pst-grid > div{ 
+	text-align:center;
+	padding:5px;
+}
+.pst-time-header{
+	background-color: blue;
+}
