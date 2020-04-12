@@ -12,13 +12,12 @@
 </div>
 <script>
 	$(document).ready(function(){ 
+		$(".pst-time-header").click(()=> window.open('http://www.pagasa.dost.gov.ph/','_blank'));
+	
 		setInterval(()=> $("#pst-time-format").html(()=> {
-			const serverTime = $("#pst-time a").html();
-			const opt1 = { dateStyle:"full"};
-			const opt2 = { timeStyle:"medium"};
-			const webTime = new Date(serverTime);
+			const serverTime = $("#pst-time a").html().split(",");
 			
-			return `<h1>${webTime.toLocaleString("en-US",opt2)}</h1><h5>${webTime.toLocaleString("en-US",opt1)}</h5>`;
+			return `<h1>${serverTime[3]}</h1><h5>${serverTime[1]},${serverTime[2]} ${serverTime[0]}</h5>`;
 			
 		}) , 1000)
 	});
