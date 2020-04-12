@@ -11,3 +11,9 @@
 .pst-time-header{
 	background-color: blue;
 }
+
+@media screen and (max-width: 600px) {
+	.pst-time-header h5{
+		font-size:0.75em;
+	}
+}
