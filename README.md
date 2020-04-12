@@ -6,3 +6,8 @@ Instructions: Copy and paste the contents of the js to the custom html widget an
 
 v 1.0
 -Basic look and feel of DOST time widget
+
+
+v 2.0
+-Fixed Invalid date error.
+-Add link to DOST when pst-timer header is click
